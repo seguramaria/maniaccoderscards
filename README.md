@@ -1,96 +1,56 @@
-<img src="https://raw.githubusercontent.com/seguramaria/sailormooncards/master/src/images/5.png" width="150"/>
+<img src="https://raw.githubusercontent.com/seguramaria/maniaccoderscards/master/src/images/6.png" width="150"/>
 
-# Sailor Moon Cards
+# Maniac Coders Awesome Profiles Cards
 
-## PROYECTO colaborativo: 'Sailor Moon' refactorización y uso de React.
+## Aplicación web interactiva con JavaScript Vanilla
 
-<<<<<<< HEAD
-### Código heredado.
-
-Enlace al anterior proyecto que se ha refactorizado: https://github.com/Adalab/project-module-2-group-6
-
-Se trata de un trabajo que nos viene dado, con código heredado, escrito por otro equipo en el Bootcamp de Adalab sobre el que tenemos que trabajar. En este caso trabajaremos sobre un generador de tarjetas interactivas realizado con Javascript Vanilla y lo pasaremos a React.
-=======
-En este proyecto colaborativo hemos realizado una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. Se puede usar para crear vuestras propias tarjetas de visita profesionales.
->>>>>>> 30e8807e6790d2206126c0221909ada9f0d0eded
+En este proyecto colaborativo vamos a realizar una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. Se puede usar para crear vuestras propias tarjetas de visita profesionales.
 
 ### Especificaciones
 
-- Se parte de un proyecto funcional y se realiza una refactorización del código incluyendo el uso de React. Refactorizar código consiste en modificar un código para mejorar su estructura pero sin añadir nuevas funcionalidades.
-- De cara a la refactorización, el proyecto usas estas tecnologías:
-  Uso de Sass para los estilos
-  Uso de ES6 y React para la estructuración del JS de la aplicación
-  Uso de mediaqueries para que el diseño sea adaptable al dispositivo
-  Desarrollo usando la estrategia mobile first
-  Uso de git para el control de versiones del proyecto, con ramas y pull-requests para revisar los cambios de las compañeras
-  Publicación del resultado en Internet usando GitHub Pages
-- La webapp deberá tener las siguientes nuevas características:
-  Usa transiciones y/o animaciones para mejorar interacciones con la aplicación
-  Se implementa con una navegación entre distintas páginas de la aplicación usando React router
+### En el desarrollo de esta aplicación web usaremos las siguientes tecnologías:
 
-### Planificación técnica, pasos dados en el proyecto
+- Uso avanzado de formularios HTML
+- Maquetación usando CSS avanzado, como flex y grid
+- Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la estrategia mobile first
+- Gestión de eventos en el navegador (al hacer click, pasa x, etc.)
+- Acceso y envío de datos a un servidor
+- Almacenamiento en local usando LocalStorage
+- Uso de git para el control de versiones del proyecto
+- Publicación del resultado en Internet usando GitHub Pages
 
-#### Primero paso. Análisis del proyecto
+### El proyecto consta de 2 páginas:
 
-Usamos dos repositorios:
-El repo del proyecto que nos hayan asignado, donde trabajaremos en una rama para entender y mejorar el código heredado. Esto quiere decir que sí podemos modificar el repo antiguo, pero sin tocar la rama master.
-Un nuevo repo con el proyecto de React.
-Analizamos y probamos el código y entendimos su estructura para poder adaptarla a nuestras necesidades y conocimientos.
-Solucionamos errores detectados en el código.
-Implementamos mejoras en el código heredado, sin modificar la funcionalidad (hacer las funciones más pequeñas, usar métodos funcionales, mejorar el nombrado, etc.).
+Una página landing de bienvenida y una página con la aplicación de crear tarjetas
 
-#### Segundo paso. Maquetación con React de la página de la herramienta
+### La aplicación funciona siguiendo estos pasos:
 
-Definimos la estructura de componentes React de la aplicación.
-Generamos los componentes del proyecto y comunicamos información mediante props.
+- Permitir al usuario elegir el estilo de la tarjeta, eligiendo paleta de colores
 
-#### Tercero. Versión completa con React
+- Permitir al usuario que, mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que muestra del resultado final
+- Permitir que el usuario pueda crear una web con su tarjeta y compartirla por Twitter
 
-Realizamos la interactividad, usando el estado y los eventos de React.
-Implementamos la comunicación con el backend, la función de compartir y offline.
+### La tarjeta de visita tiene los siguientes campos (entre paréntesis el nombre del campo usado):
 
-#### Cuarta. Mejoras finales
+- Nombre completo (full_name)
+- Profesión (desarrolladora front-end ;) (job)
+- Datos personales
+- Teléfono (phone)
+- Correo electrónico (email)
+- RRSS
+- LinkedIn (linkedin)
+- GitHub (github)
 
-Creamos la página de landing.
-Revisamos el código y realizamos pruebas.
-Implementamos las rutas con React router.
+### Respecto a la interacción con la web:
 
-#### React Router
+- Los campos tienen restricciones para su formato indicado. Campo de teléfono para el móvil, mail para el correo, etc.
+- Las modificaciones que hacemos en el formulario (diseño y contenido), aparecen automáticamente en la vista previa de la tarjeta
+- Las 3 partes del proceso de creación son elementos colapsables, que al hacer clic en el título se muestra/oculta solo mostrando una sección a la vez
+- Toda la información del formulario se almacena en LocalStorage (almacenamiento local del navegador), de forma que al recargar la página sigue disponible y podemos borrarla con un botón de Reset. Para esto, definimos una estructura de datos compleja (con arrays y objetos) que es lo que guardaremos en el navegador
 
-###### En Index.js :
+### Para compartir en Twitter seguiremos 2 pasos:
 
-1. Importamos el componente HashRouter
-   `import { HashRouter } from "react-router-dom";`
+- Al hacer clic en el botón de "Enviar" enviamos el formulario (submit) a un API que devuelve la URL de una web con la tarjeta de visita con la información rellena
+- Mostramos esta URL para que el usuario verifique si la tarjeta está bien definida y un botón de "Compartir" que enlaza a Twitter donde habrá un tweet con texto predefinido que incluye la URL de la tarjeta
 
-2. Y renderizamos como children nuestro componente principal CardApp (Para que tenga más coherencia, le cambié el nombre. Lo habíamos importado con el nombre 'App', pero el archivo del componente al que hace referencia la ruta realmente se llama 'CardApp.js')
-   `ReactDOM.render( <HashRouter> <CardApp /> </HashRouter>, document.getElementById("root") );`
-
-###### En CardApp.js, que el componente principal del proyecto :
-
-3. Inportamos Route y Switch
-   `import { Route, Switch } from "react-router-dom";`
-
-4. Añadimos el componente 'Switch' y dentro incluimos las rutas de la página landing (compuesta por 'MainLanding' y 'Footer') y de la página de creación de tarjetas (compuesta por 'Header', 'Main' y 'Footer')
-   `<Switch> <Route exact path="/"> <div className="landing"> <MainLanding /> <Footer /> </div> </Route> <Route exact path="/cardApp"> <div className="cardApp"> <Header /> <Main user={user} handleChangeInput={handleChangeInput} /> <Footer /> </div> </Route> </Switch>`
-
-###### En MainLanding.js, dónde tenemos el botón que nos lleva a la página de creación de tarjetas
-
-5. Inportamos Link
-   `import { Link } from "react-router-dom";`
-
-6. Insertamos el compnente 'Link' con la ruta hacia la página de creación de tarjetas
-   `<Link to="/cardApp" title="Ir a comenzar"> Comenzar </Link>`
-
-###### En Header.js, dónde tenemos el botón que nos lleva a la página landing
-
-7. Inportamos Link
-   `import { Link } from "react-router-dom";`
-
-8. Insertamos el compnente 'Link' con la ruta hacia landing
-   `<Link to="/" title="Home"> <img src={logoawesome} title="Ir a la Home" alt="Awesome Profile Cards Logo" /> </Link>`
-
-<<<<<<< HEAD
-Enlace a GitHub Pages para ver el resultado: http://beta.adalab.es/project-promo-j-module-3-team-2/#/
-=======
-Enlace a GitHub Pages para ver el resultado de la página: https://beta.adalab.es/project-promo-j-module-3-team-3/index.html
->>>>>>> 30e8807e6790d2206126c0221909ada9f0d0eded
+Enlace a GitHub Pages para ver el resultado de la página: http://beta.adalab.es/project-promo-j-module-3-team-2/#/
