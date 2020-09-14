@@ -4,7 +4,7 @@
 
 ## Aplicación web interactiva con JavaScript Vanilla
 
-En este proyecto colaborativo vamos a realizar una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. Se puede usar para crear vuestras propias tarjetas de visita profesionales.
+En este proyecto colaborativo hemos realizado una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. Se puede usar para crear vuestras propias tarjetas de visita profesionales.
 
 ### Especificaciones
 
