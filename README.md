@@ -53,4 +53,4 @@ Una página landing de bienvenida y una página con la aplicación de crear tarj
 - Al hacer clic en el botón de "Enviar" enviamos el formulario (submit) a un API que devuelve la URL de una web con la tarjeta de visita con la información rellena
 - Mostramos esta URL para que el usuario verifique si la tarjeta está bien definida y un botón de "Compartir" que enlaza a Twitter donde habrá un tweet con texto predefinido que incluye la URL de la tarjeta
 
-Enlace a GitHub Pages para ver el resultado de la página: http://beta.adalab.es/project-promo-j-module-3-team-2/#/
+Enlace a GitHub Pages para ver el resultado de la página: https://beta.adalab.es/project-promo-j-module-3-team-3/index.html
