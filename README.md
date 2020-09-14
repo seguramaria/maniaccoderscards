@@ -21,7 +21,11 @@ En este proyecto colaborativo vamos a realizar una aplicación web que nos permi
 
 ### El proyecto consta de 2 páginas:
 
-Una página landing de bienvenida y una página con la aplicación de crear tarjetas
+Una página landing de bienvenida y una página con la aplicación de crear tarjetas.
+Diseño responsive:
+<img src="https://raw.githubusercontent.com/seguramaria/maniaccoderscards/master/src/images/responsive/7.png" width="200"/>
+<img src="https://raw.githubusercontent.com/seguramaria/maniaccoderscards/master/src/images/responsive/8.png" width="200"/>
+<img src="https://raw.githubusercontent.com/seguramaria/maniaccoderscards/master/src/images/responsive/9.png" width="200"/>
 
 ### La aplicación funciona siguiendo estos pasos:
 
