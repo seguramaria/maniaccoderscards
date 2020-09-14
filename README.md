@@ -4,11 +4,15 @@
 
 ## PROYECTO colaborativo: 'Sailor Moon' refactorización y uso de React.
 
+<<<<<<< HEAD
 ### Código heredado.
 
 Enlace al anterior proyecto que se ha refactorizado: https://github.com/Adalab/project-module-2-group-6
 
 Se trata de un trabajo que nos viene dado, con código heredado, escrito por otro equipo en el Bootcamp de Adalab sobre el que tenemos que trabajar. En este caso trabajaremos sobre un generador de tarjetas interactivas realizado con Javascript Vanilla y lo pasaremos a React.
+=======
+En este proyecto colaborativo hemos realizado una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. Se puede usar para crear vuestras propias tarjetas de visita profesionales.
+>>>>>>> 30e8807e6790d2206126c0221909ada9f0d0eded
 
 ### Especificaciones
 
@@ -85,4 +89,8 @@ Implementamos las rutas con React router.
 8. Insertamos el compnente 'Link' con la ruta hacia landing
    `<Link to="/" title="Home"> <img src={logoawesome} title="Ir a la Home" alt="Awesome Profile Cards Logo" /> </Link>`
 
+<<<<<<< HEAD
 Enlace a GitHub Pages para ver el resultado: http://beta.adalab.es/project-promo-j-module-3-team-2/#/
+=======
+Enlace a GitHub Pages para ver el resultado de la página: https://beta.adalab.es/project-promo-j-module-3-team-3/index.html
+>>>>>>> 30e8807e6790d2206126c0221909ada9f0d0eded
